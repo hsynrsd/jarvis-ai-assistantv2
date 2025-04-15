@@ -42,7 +42,7 @@ You can engage in natural conversation while also helping with tasks."""
             headers = {
                 "Authorization": f"Bearer {self.api_key}",
                 "Content-Type": "application/json",
-                "HTTP-Referer": "https://github.com/hsynrsd/jarvis-ai-assistant",  # Update with your repo URL
+                "HTTP-Referer": "https://github.com/hsynrsd/jarvis-ai-assistantv2",  # Update with your repo URL
                 "X-Title": "J.A.R.V.I.S. AI Assistant",
                 "User-Agent": "J.A.R.V.I.S. AI Assistant/1.0"
             }

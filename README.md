@@ -1,28 +1,40 @@
-# J.A.R.V.I.S. - Just A Rather Very Intelligent System
+# J.A.R.V.I.S. AI Assistant
 
-A personal AI assistant inspired by Iron Man's J.A.R.V.I.S., built with Python.
+A sophisticated AI assistant inspired by Iron Man's J.A.R.V.I.S., built with Python and powered by OpenRouter's AI models.
 
 ## Features
 
-- Cross-platform support (Windows, Linux, macOS)
-- Modular command system
-- Natural language processing capabilities
-- Plugin-based architecture for easy extension
-- Voice activation and speech recognition
-- Text-to-speech responses
+- 🤖 Natural Language Processing with OpenRouter's AI
+- 🎙️ Voice Recognition and Response
+- 🔍 Web Search Capabilities
+- 📝 File Operations
+- 🎵 Music Playback
+- 📊 System Information
+- 🔄 Command History
+- 🎨 Rich Console Interface
+
+## Prerequisites
+
+- Python 3.11 or higher
+- pip (Python package manager)
+- OpenRouter API key
+- Internet connection
 
 ## Installation
 
-1. Clone this repository:
+1. Clone the repository:
 ```bash
-git clone https://github.com/hsynrsd/jarvis-ai-assistant.git
-cd jarvis-ai-assistant
+git clone https://github.com/hsynrsd/jarvis-ai-assistantv2.git
+cd jarvis-ai-assistantv2
 ```
 
-2. Create a virtual environment and activate it:
+2. Create and activate a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# On Windows
+venv\Scripts\activate
+# On Unix or MacOS
+source venv/bin/activate
 ```
 
 3. Install dependencies:
@@ -30,52 +42,70 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Create a `.env` file in the project root and add your API keys:
+4. Create a `.env` file in the project root and add your OpenRouter API key:
 ```
-OPENAI_API_KEY=your_openai_api_key
-# Add other API keys as needed
+OPENROUTER_API_KEY=your-api-key-here
 ```
 
 ## Usage
 
-Run the assistant:
+1. Start J.A.R.V.I.S.:
 ```bash
 python jarvis.py
 ```
 
-### Basic Commands
+2. Available Commands:
+- `help` - Show available commands
+- `search <query>` - Search the web
+- `voice on/off` - Toggle voice features
+- `play <song>` - Play music
+- `system` - Show system information
+- `history` - Show command history
+- `exit` or `quit` - Exit J.A.R.V.I.S.
 
-- `open [website]` - Opens a website in your default browser
-- `browse [website]` - Alternative command to open websites
-- `listen` - Start voice recognition mode
-- `stop listening` - Stop voice recognition mode
-- `speak [text]` - Make J.A.R.V.I.S. say something
-- `exit` - Exits the assistant
+## Voice Commands
 
-### Voice Commands
-
-Once voice recognition is activated with the `listen` command, you can:
-1. Say "Jarvis" or "Hey Jarvis" to get J.A.R.V.I.S.'s attention
-2. Wait for the "Yes?" response
+Voice features are enabled by default. To use voice commands:
+1. Speak clearly into your microphone
+2. Wait for the "Listening..." prompt
 3. Speak your command
-4. J.A.R.V.I.S. will respond verbally
+4. J.A.R.V.I.S. will process and respond
 
-Example voice interactions:
-- "Hey Jarvis, open YouTube"
-- "Jarvis, what's the weather?"
-- "Hey Jarvis, remind me to study at 6 PM"
+## Project Structure
 
-## Adding New Commands
-
-1. Create a new Python file in the `commands` directory
-2. Implement your command handlers
-3. Add a `register_commands` function to register your commands
-4. Import your module in `commands/__init__.py`
+```
+jarvis-ai-assistantv2/
+├── commands/           # Command modules
+│   ├── conversation.py # Natural language processing
+│   ├── voice.py       # Voice recognition
+│   └── ...            # Other command modules
+├── jarvis.py          # Main application
+├── requirements.txt   # Dependencies
+└── .env              # Environment variables
+```
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Inspired by Iron Man's J.A.R.V.I.S.
+- Powered by OpenRouter's AI models
+- Built with Python and various open-source libraries
+
+## Support
+
+If you encounter any issues or have questions, please open an issue on the GitHub repository.
+
+---
+
+Made with ❤️ by Huseyin Rashid 
